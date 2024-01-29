@@ -1,0 +1,136 @@
+body {
+  font-family: 'Noto Serif JP', serif;
+
+}
+
+h1 {
+  display: inline-block;
+  margin: 0 32px 0 0;
+}
+
+.card h2 {
+  display: inline-block;
+  margin: 8px 0 16px 0;
+}
+
+.links {
+  display: inline-block;
+}
+
+.links li {
+  display: inline-block;
+}
+.links a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 8px;
+}
+
+.navbar {
+  margin: 27px;
+}
+
+a.active {
+  border-bottom: 1px solid black;
+}
+
+.card img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card img:hover {
+  opacity: 0.9;
+}
+
+.card {
+  width: 49.75%;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 16px;
+  /* border: 1px solid red; */
+}
+
+.gallary {
+  padding: 16px;
+}
+
+/* object-fit: fill */
+/* object-fit: contain */
+/* object-fit: cover */
+/* min-width used for stop shrinking at that point when width is going to 600 or else. */
+
+
+.about {
+  width: 40%;
+  min-width: 600px;  
+  margin: 100px 0 100px 200px; 
+}
+
+.about h3 {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.contact {
+  margin-top: 100px; 
+}
+
+.contact p {
+  margin: 0;
+  font-size: 20px;
+}
+
+.contact a {
+  color: black;
+  text-decoration: none;
+}
+
+.cta {
+  border-bottom: 1px solid black;
+  padding-bottom: 8px;
+  display: inline-block;
+  margin-top: 0;
+}
+
+
+
+/* *****sibling selector********
+h2 ~ p {
+  color: black;
+ }
+ 
+ *******Adjacent selector*********
+ h1 + p {
+ }
+ 
+ ******Pseudo class*******
+ button:hover {
+  colo: blue;
+ }*/
+
+
+
+ @media only screen and (max-width: 1000px) {
+  .card {
+    width: 100%;
+  }
+  .about {
+    margin: 100px 0 100px 100px;
+  }
+ }
+
+ @media only screen and (max-width: 700px) {
+  .card {
+    padding: 0;
+  }
+  .gallery {
+    padding: 8px;
+  }
+  .about {
+    margin: 100px auto;
+    min-width: 450px;
+  }
+ }
